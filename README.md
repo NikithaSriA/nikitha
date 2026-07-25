@@ -7,5 +7,5 @@
   📚 Passionate about Problem Solving & Open Source
 </p>
 <p align="center">
-<img src="https://skillicons.dev/icons?i=java,js,nodejs,react,html,css,mysql,git,github,vscode,python&perline=6"/>
+<img src="https://skillicons.dev/icons?i=java,js,nodejs,html,css,mysql,git,github,vscode,python&perline=6"/>
 </p>
