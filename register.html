@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Competition Registration</title>
+
+    <!-- Linking CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Online Competition Registration</h1>
+        <p class="subtitle">Register for the upcoming competition</p>
+
+        <form id="registrationForm">
+
+            <!-- Personal Details -->
+            <h2>Personal Details</h2>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="fatherName">Father's Name:</label>
+                    <input type="text" id="fatherName" name="fatherName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="motherName">Mother's Name:</label>
+                    <input type="text" id="motherName" name="motherName" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" value="Male" required>
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Details -->
+            <h2>Education Details</h2>
+
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Percentage / CGPA</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="qualification1" placeholder="10th">
+                    </td>
+                    <td>
+                        <input type="text" name="institution1">
+                    </td>
+                    <td>
+                        <input type="number" name="year1">
+                    </td>
+                    <td>
+                        <input type="text" name="percentage1">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="qualification2" placeholder="12th / Diploma">
+                    </td>
+                    <td>
+                        <input type="text" name="institution2">
+                    </td>
+                    <td>
+                        <input type="number" name="year2">
+                    </td>
+                    <td>
+                        <input type="text" name="percentage2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="qualification3" placeholder="Graduation">
+                    </td>
+                    <td>
+                        <input type="text" name="institution3">
+                    </td>
+                    <td>
+                        <input type="number" name="year3">
+                    </td>
+                    <td>
+                        <input type="text" name="percentage3">
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Upload Section -->
+            <h2>Documents</h2>
+
+            <div class="upload-group">
+                <label for="photo">Passport Photo (Optional):</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </div>
+
+            <div class="upload-group">
+                <label for="signature">Signature:</label>
+                <input type="file" id="signature" name="signature"
+                       accept="image/*" required>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttons">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+
+        </form>
+
+        <!-- Success message -->
+        <div id="successMessage">
+            Successful Registration!
+        </div>
+
+    </div>
+
+    <!-- Linking JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>

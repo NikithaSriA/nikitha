@@ -1,0 +1,202 @@
+/* General page styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+
+/* Main container */
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #444;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+
+/* Form layout */
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+
+/* Labels */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+/* Input fields */
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Radio buttons */
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-group label {
+    font-weight: normal;
+}
+
+.radio-group input {
+    margin-right: 5px;
+}
+
+
+/* Education table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+td input {
+    width: 95%;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+
+/* Upload section */
+
+.upload-group {
+    margin-top: 15px;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+
+/* Buttons */
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+.submit-btn {
+    background-color: green;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #777;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: darkgreen;
+}
+
+.reset-btn:hover {
+    background-color: #555;
+}
+
+
+/* Success message */
+
+#successMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #d4edda;
+    color: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+}
