@@ -25,7 +25,7 @@ class percom {
         int nPr = factN / factNR;
         int nCr = factN / (factR * factNR);
 
-        System.out.println("Permutation = " + nPr);
-        System.out.println("Combination = " + nCr);
+        System.out.println("Permutation is " + nPr);
+        System.out.println("Combination is " + nCr);
     }
 }

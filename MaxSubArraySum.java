@@ -29,6 +29,6 @@ class MaximumSubArraySum {
                 maximum = current;
         }
 
-        System.out.println("Maximum subarray sum = " + maximum);
+        System.out.println("Maximum subarray sum is " + maximum);
     }
 }

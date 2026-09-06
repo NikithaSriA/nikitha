@@ -20,6 +20,6 @@ class MissingNumber {
 
         int missing = total - sum;
 
-        System.out.println("Missing number = " + missing);
+        System.out.println("Missing number is " + missing);
     }
 }
